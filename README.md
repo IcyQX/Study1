@@ -61,6 +61,14 @@ py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
+If `py` is not available but another Python executable is installed, replace
+`py` with that executable path. After the environment is created, you can run
+Python directly through:
+
+```powershell
+.\.venv\Scripts\python.exe --version
+```
+
 After activating the virtual environment, use `python` normally.
 
 ## Run Experiments
