@@ -1,0 +1,69 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ROS / robotics builds
+build/
+install/
+log/
+.colcon/
+
+# Simulation and experiment outputs
+outputs/
+runs/
+results/
+logs/
+wandb/
+mlruns/
+
+# Large data and model artifacts
+data/raw/
+data/interim/
+datasets/
+models/
+checkpoints/
+*.bag
+*.db3
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.log
