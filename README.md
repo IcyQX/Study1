@@ -59,6 +59,7 @@ Optional virtual environment setup:
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
+python -m pip install -e .
 ```
 
 If `py` is not available but another Python executable is installed, replace
@@ -71,12 +72,15 @@ Python directly through:
 
 After activating the virtual environment, use `python` normally.
 
+The `python -m pip install -e .` command registers the `src/context_gridworld`
+package in the virtual environment. This lets VS Code run files and tests
+without manually setting `PYTHONPATH` every time.
+
 ## Run Experiments
 
 From the repository root:
 
 ```powershell
-$env:PYTHONPATH = "src"
 python -m context_gridworld.experiment --episodes 50 --output results/experiment_results.csv
 ```
 
@@ -94,7 +98,6 @@ file.
 From the repository root:
 
 ```powershell
-$env:PYTHONPATH = "src"
 python -m unittest discover -s tests
 ```
 
